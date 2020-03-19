@@ -26,6 +26,7 @@ end
   else
     erb :error
   end
+end
 
   get '/logout' do
     session.clear
