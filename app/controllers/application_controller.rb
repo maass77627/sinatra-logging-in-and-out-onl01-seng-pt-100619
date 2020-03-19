@@ -23,6 +23,8 @@ end
   get '/account' do
     if is_logged_?
     erb :account
+  else 
+    erb :error
   end
 
   get '/logout' do
