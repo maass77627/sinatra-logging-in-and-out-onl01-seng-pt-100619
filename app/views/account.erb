@@ -7,8 +7,10 @@
   </head>
   <body id="page-top">
     <a href="/logout">logout</a>
-    <h1>Welcome <%= Helpers.current_user(session).username %></h1>
-   <h3>Your Balance: <%= Helpers.current_user(session).balance %></h3>
+    <% if @user == current_user %>
+    <%= @user.username %>
+    <%= @user.balance %>
+    <% end %>
 
   </body>
 </html>
