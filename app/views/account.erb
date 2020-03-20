@@ -7,7 +7,6 @@
   </head>
   <body id="page-top">
     <a href="/logout">logout</a>
-    <% if is_logged_in?(session) %>
     <%= @user.username %>
     <%= @user.balance %>
     <% end %>
